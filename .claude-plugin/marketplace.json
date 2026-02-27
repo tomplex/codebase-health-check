@@ -1,0 +1,23 @@
+{
+  "name": "tomplex-codebase-health-check",
+  "owner": {
+    "name": "Tom"
+  },
+  "metadata": {
+    "description": "Codebase health check plugin for Claude Code",
+    "version": "1.0.0",
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "codebase-health-check",
+      "source": "./plugins/codebase-health-check",
+      "description": "Analyze codebases for structural health issues and guide resolution: dead code, complexity, DRY violations, confusing implementations, extensibility concerns, inconsistent patterns, and naming/organization problems",
+      "version": "0.2.0",
+      "author": {
+        "name": "Tom"
+      },
+      "keywords": ["health-check", "code-quality", "analysis", "refactoring", "resolution", "triage"]
+    }
+  ]
+}

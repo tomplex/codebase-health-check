@@ -15,14 +15,8 @@ Then it works through the batches one at a time. Mechanical fixes get dispatched
 ## Installation
 
 ```bash
-claude plugin add /path/to/codebase-health-check
-```
-
-Or clone and add:
-
-```bash
-git clone git@github.com:tomplex/codebase-health-check.git
-claude plugin add ./codebase-health-check
+claude plugin marketplace add tomplex/codebase-health-check
+claude plugin install codebase-health-check@tomplex-codebase-health-check
 ```
 
 ## Commands
