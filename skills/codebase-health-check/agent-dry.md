@@ -1,6 +1,6 @@
 # DRY Violations Analysis
 
-You are analyzing a codebase for DRY (Don't Repeat Yourself) violations. A DRY violation occurs when the same piece of knowledge, logic, or concept is expressed in multiple places, so that a change to one requires a parallel change to the others. Duplication increases the risk of inconsistency, makes refactoring harder, and multiplies the surface area for bugs.
+**Your task:** Find places where the same knowledge, logic, or concept is expressed in multiple places — copy-pasted code blocks, parallel implementations of the same business rule, extractable utility patterns, and duplicated constants. Search systematically using the methodology below and report findings with severity ratings.
 
 Systematically work through every category below. For each category, actively search the codebase using the techniques described in the "How to Search" section.
 

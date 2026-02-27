@@ -1,6 +1,6 @@
 # Extensibility Concerns Analysis
 
-You are analyzing a codebase for extensibility concerns. An extensibility concern is any code structure or pattern that makes it difficult to add new features, support new cases, or extend existing behavior without modifying working code in fragile or far-reaching ways. Poor extensibility means that every new feature requires touching many existing files, understanding deeply intertwined modules, and risking regressions in unrelated functionality. It slows development, increases bug rates, and discourages teams from building on their own codebase.
+**Your task:** Find code structures that make it difficult to add new features without modifying working code in fragile ways — tight coupling, hard-coded values, growing conditional chains, missing extension points, and monolithic functions. Focus especially on areas the user identified as actively being extended. Search systematically using the methodology below and report findings with severity ratings.
 
 Systematically work through every category below. For each category, actively search the codebase using the techniques described in the "How to Search" section.
 

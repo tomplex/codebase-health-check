@@ -1,6 +1,6 @@
 # Naming & Organization Analysis
 
-You are analyzing a codebase for naming and organizational issues. Poor naming and organization means files, directories, and modules are named misleadingly, placed in the wrong location, or structured in ways that make the codebase difficult to navigate. When the project's physical structure does not match its logical structure, developers waste time searching for code, put new code in the wrong place, and build incorrect mental models of the system. Naming and organization problems compound over time — each misplaced file or misleading name makes the next developer slightly more likely to repeat the mistake.
+**Your task:** Find files, directories, and modules that are named misleadingly, placed in the wrong location, or structured in ways that make the codebase hard to navigate — misplaced files, unclear module boundaries, junk-drawer utils files, misleading directory names, and flat structures with too many files. Search systematically using the methodology below and report findings with severity ratings.
 
 Systematically work through every category below. For each category, actively search the codebase using the techniques described in the "How to Search" section.
 

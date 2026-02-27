@@ -1,6 +1,6 @@
 # Confusing Implementations Analysis
 
-You are analyzing a codebase for confusing implementations. Confusing code is any code that makes a reader pause, re-read, or misunderstand what is happening. It includes clever tricks that sacrifice clarity, misleading names, hidden side effects, non-obvious control flow, and absent or contradictory comments. Confusing code slows down every developer who encounters it, breeds bugs born from misunderstanding, and makes code review unreliable because reviewers cannot confidently reason about behavior.
+**Your task:** Find code that makes readers pause, re-read, or misunderstand what is happening — clever tricks, misleading names, hidden side effects, non-obvious control flow, and absent or contradictory comments. Search systematically using the methodology below and report findings with severity ratings.
 
 Systematically work through every category below. For each category, actively search the codebase using the techniques described in the "How to Search" section.
 

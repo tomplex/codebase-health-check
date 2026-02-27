@@ -1,0 +1,6 @@
+# Health-check output from self-analysis
+docs/health-checks/
+
+# OS files
+.DS_Store
+Thumbs.db

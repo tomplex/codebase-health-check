@@ -1,6 +1,6 @@
 # Inconsistent Patterns Analysis
 
-You are analyzing a codebase for inconsistent patterns. An inconsistent pattern is any case where the same concern is handled in different ways across the codebase without a clear reason for the divergence. Inconsistency increases cognitive load because developers cannot transfer knowledge from one module to another — they must re-learn how each module handles error reporting, naming, return values, and code organization. Inconsistency breeds bugs because developers apply the convention they learned from one module to another module where a different convention is in use. It also makes onboarding painful: new developers cannot tell which approach is "correct" and end up guessing or copying whichever example they find first, compounding the inconsistency further.
+**Your task:** Find places where the same concern is handled differently across the codebase without justification — mixed error handling strategies, inconsistent API styles, divergent coding patterns, and conventions that most modules follow but a few violate. Search systematically using the methodology below and report findings with severity ratings.
 
 Systematically work through every category below. For each category, actively search the codebase using the techniques described in the "How to Search" section.
 

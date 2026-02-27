@@ -1,5 +1,5 @@
 ---
-description: "Resume resolving findings from an existing health-check report."
+description: "Resume resolving findings from an existing health-check report. Usage: /resolve or /resolve docs/health-checks/2026-02-27/"
 disable-model-invocation: true
 ---
 

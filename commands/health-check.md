@@ -1,5 +1,5 @@
 ---
-description: "Analyze a codebase for structural health issues: dead code, complexity, DRY violations, confusing implementations, extensibility concerns, inconsistent patterns, and naming/organization."
+description: "Analyze a codebase for structural health issues. Usage: /health-check src/ or /health-check (to be prompted for scope)."
 disable-model-invocation: true
 ---
 

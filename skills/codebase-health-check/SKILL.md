@@ -21,7 +21,8 @@ Do NOT skip phases, reorder them, or begin a later phase before its prerequisite
 3. If NO scope was provided, ask the user:
    > What directory or area of the codebase should I analyze? (e.g., `src/`, `lib/`, or `.` for the entire repo)
 4. Confirm the scope exists by checking the filesystem. If it does not exist, ask again.
-5. Store the resolved scope path for use in all subsequent phases.
+5. If the scope contains more than ~5,000 source files, suggest narrowing to a specific feature directory or module. Very large scopes dilute agent attention and produce noisier results. The user can override this suggestion if they want a full-codebase scan.
+6. Store the resolved scope path for use in all subsequent phases.
 
 ---
 

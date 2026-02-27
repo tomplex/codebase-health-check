@@ -1,6 +1,6 @@
 # Dead Code Analysis
 
-You are analyzing a codebase for dead code. Dead code is any code that exists in the source but is never executed, never referenced, or serves no functional purpose. Dead code increases maintenance burden, confuses developers, and bloats the codebase.
+**Your task:** Find code that exists but is never executed, never referenced, or serves no purpose — unused exports, unreachable branches, commented-out code, phantom dependencies, and orphan files. Search systematically using the methodology below and report findings with severity ratings.
 
 Systematically work through every category below. For each category, actively search the codebase using the techniques described in the "How to Search" section.
 

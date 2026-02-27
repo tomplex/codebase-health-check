@@ -1,6 +1,6 @@
 # Complexity Analysis
 
-You are analyzing a codebase for unnecessary complexity. Unnecessary complexity is any code structure that is harder to understand, modify, or debug than it needs to be for the problem it solves. Complexity increases cognitive load, slows development, hides bugs, and discourages contributors from making changes.
+**Your task:** Find code that is harder to understand, modify, or debug than it needs to be — god functions, deep nesting, high cyclomatic complexity, over-engineered abstractions, and premature optimizations. Search systematically using the methodology below and report findings with severity ratings.
 
 Systematically work through every category below. For each category, actively search the codebase using the techniques described in the "How to Search" section.
 
