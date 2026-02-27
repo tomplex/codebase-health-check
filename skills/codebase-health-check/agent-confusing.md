@@ -1,8 +1,3 @@
----
-name: agent-confusing
-description: Agent prompt for finding misleading names, hidden side effects, clever tricks, and missing explanatory comments.
----
-
 # Confusing Implementations Analysis
 
 You are analyzing a codebase for confusing implementations. Confusing code is any code that makes a reader pause, re-read, or misunderstand what is happening. It includes clever tricks that sacrifice clarity, misleading names, hidden side effects, non-obvious control flow, and absent or contradictory comments. Confusing code slows down every developer who encounters it, breeds bugs born from misunderstanding, and makes code review unreliable because reviewers cannot confidently reason about behavior.

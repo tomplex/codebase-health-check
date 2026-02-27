@@ -88,6 +88,29 @@ docs/health-checks/YYYY-MM-DD/
 └── ...
 ```
 
+## Example Output
+
+A finding in the report:
+
+```markdown
+#### 3. Duplicated validation logic across API handlers
+- **Category:** DRY Violations
+- **Location:** `src/handlers/users.ts:45`, `src/handlers/orders.ts:32`
+- **Details:** Identical email format validation repeated in both handlers.
+- **Suggestion:** Extract shared validation into a reusable validator module.
+```
+
+Triage groups findings into ordered batches:
+
+```markdown
+### Batch 1: Dead code removal (mechanical)
+- #1: Remove unused `formatLegacyResponse` export
+- #2: Remove orphan file `src/utils/old-parser.ts`
+
+### Batch 2: Validation extraction (architectural)
+- #3: Duplicated validation logic across API handlers
+```
+
 ## Design Principles
 
 This plugin encodes patterns discovered across real health-check sessions on production codebases:

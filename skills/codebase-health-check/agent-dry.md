@@ -1,8 +1,3 @@
----
-name: agent-dry
-description: Agent prompt for identifying duplicated logic, copy-pasted code, and extractable patterns.
----
-
 # DRY Violations Analysis
 
 You are analyzing a codebase for DRY (Don't Repeat Yourself) violations. A DRY violation occurs when the same piece of knowledge, logic, or concept is expressed in multiple places, so that a change to one requires a parallel change to the others. Duplication increases the risk of inconsistency, makes refactoring harder, and multiplies the surface area for bugs.

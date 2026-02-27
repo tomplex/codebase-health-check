@@ -6,5 +6,6 @@
     "name": "Tom"
   },
   "license": "MIT",
-  "keywords": ["health-check", "code-quality", "analysis", "refactoring", "resolution", "triage"]
+  "keywords": ["health-check", "code-quality", "analysis", "refactoring", "resolution", "triage"],
+  "repository": "https://github.com/tomplex/codebase-health-check"
 }

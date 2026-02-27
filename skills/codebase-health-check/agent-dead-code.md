@@ -1,8 +1,3 @@
----
-name: agent-dead-code
-description: Agent prompt for detecting unused exports, unreachable code, orphan files, and stale dependencies.
----
-
 # Dead Code Analysis
 
 You are analyzing a codebase for dead code. Dead code is any code that exists in the source but is never executed, never referenced, or serves no functional purpose. Dead code increases maintenance burden, confuses developers, and bloats the codebase.

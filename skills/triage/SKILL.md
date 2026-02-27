@@ -83,6 +83,8 @@ Ask the user:
 
 > "What's your fast verification command — something under a minute that covers whether the code you changed is correct? (e.g., `npm test`, `pytest tests/anthology/ -v && ruff check .`, `cargo test -p my-crate`)"
 
+If the user doesn't have a test suite, suggest a minimal alternative: a type checker (`tsc --noEmit`), linter (`eslint .`, `ruff check .`), or syntax/build check (`go build ./...`, `cargo check`). Any fast command that catches breakage is better than none.
+
 Store their answer exactly as given. This command will be written into `plan.md` and used by resolve-batch after every batch.
 
 ---
