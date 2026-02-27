@@ -1,10 +1,10 @@
 {
   "name": "codebase-health-check",
-  "description": "Analyze codebases for structural health issues: dead code, complexity, DRY violations, confusing implementations, extensibility concerns, inconsistent patterns, and naming/organization problems",
-  "version": "0.1.0",
+  "description": "Analyze codebases for structural health issues and guide resolution: dead code, complexity, DRY violations, confusing implementations, extensibility concerns, inconsistent patterns, and naming/organization problems",
+  "version": "0.2.0",
   "author": {
     "name": "Tom"
   },
   "license": "MIT",
-  "keywords": ["health-check", "code-quality", "analysis", "refactoring"]
+  "keywords": ["health-check", "code-quality", "analysis", "refactoring", "resolution", "triage"]
 }
