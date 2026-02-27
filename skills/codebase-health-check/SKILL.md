@@ -1,5 +1,5 @@
 ---
-name: codebase-health-check
+name: health-check
 description: >
   Analyze a codebase for structural health issues (dead code, complexity, DRY violations,
   confusing code, extensibility, inconsistencies, naming/organization) and produce a severity-ranked report.
@@ -269,7 +269,7 @@ After presenting the summary, ask:
 
 > "Would you like to triage and resolve these findings?"
 
-- If the user says **yes**, invoke `codebase-health-check:triage` with the health-check directory path.
+- If the user says **yes**, invoke `health-check:triage` with the health-check directory path.
 - If the user says **no**, mark task 10 as complete and end the health check. The report stands on its own — the user can run `/resolve` later to pick up the pipeline.
 
 Mark task 10 as complete after the user has responded.

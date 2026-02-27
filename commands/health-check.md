@@ -3,7 +3,7 @@ description: "Analyze a codebase for structural health issues. Usage: /health-ch
 disable-model-invocation: true
 ---
 
-Invoke the codebase-health-check:codebase-health-check skill and follow it exactly as presented to you.
+Invoke the health-check:health-check skill and follow it exactly as presented to you.
 
 The user's arguments to this command are: ${ARGUMENTS}
 
