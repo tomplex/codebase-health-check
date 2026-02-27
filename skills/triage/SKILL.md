@@ -23,7 +23,7 @@ You are triaging a codebase health-check report. Follow every phase below in str
 4. If `plan.md` already exists in the directory, inform the user:
    > "Triage was already completed for this health check — plan.md exists at [path]/plan.md. Would you like to re-triage (overwrite plan.md) or proceed to resolving batches?"
    - If the user chooses to re-triage, continue to Phase 1 (plan.md will be overwritten in Phase 5).
-   - If the user chooses to proceed, invoke `health-check:resolve-batch` with the health-check directory path and stop.
+   - If the user chooses to proceed, invoke `codebase-health-check:resolve-batch` with the health-check directory path and stop.
 
 ---
 
@@ -195,7 +195,7 @@ Where:
 
 ## Terminal State
 
-Invoke `health-check:resolve-batch` with the health-check directory path. This is the ONLY valid next step. Do NOT invoke any other skill. Do NOT end the session. Do NOT offer the user other options.
+Invoke `codebase-health-check:resolve-batch` with the health-check directory path. This is the ONLY valid next step. Do NOT invoke any other skill. Do NOT end the session. Do NOT offer the user other options.
 
 ---
 

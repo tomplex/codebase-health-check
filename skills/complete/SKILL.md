@@ -32,7 +32,7 @@ You are finalizing a completed health-check resolution. Follow every step below 
    >
    > Close out anyway (remaining batches will be marked `deferred`), or continue resolving?"
 
-   - If the user chooses to **continue resolving** — invoke `health-check:resolve-batch` with the health-check directory path and stop. Do NOT proceed to Phase 1.
+   - If the user chooses to **continue resolving** — invoke `codebase-health-check:resolve-batch` with the health-check directory path and stop. Do NOT proceed to Phase 1.
    - If the user chooses to **close out** — proceed to Phase 1. Unresolved batches will be marked `deferred`.
 
 ---

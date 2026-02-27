@@ -26,7 +26,7 @@ You are executing health-check fixes one batch at a time. Follow every phase bel
    - If a batch has status `in_progress`, a previous session likely crashed mid-batch. Inform the user:
      > "Batch N: [theme] was left in_progress from a previous session. Resuming from the start of this batch."
      Reset its status to `next` in `progress.md` before continuing.
-6. If no unresolved batches remain (all rows are `done`), invoke `health-check:complete` with the health-check directory path and stop. Do NOT continue with any later phase.
+6. If no unresolved batches remain (all rows are `done`), invoke `codebase-health-check:complete` with the health-check directory path and stop. Do NOT continue with any later phase.
 7. Read the current batch's details from `plan.md`: the finding numbers listed under the batch heading, the batch theme (name), and the classification in parentheses (`mechanical` or `architectural`).
 8. Read `report.md` from the health-check directory. For each finding number in the current batch, locate its full entry in the report — finding number, short description, severity, location, details, and suggestion. Store all of these for use in later phases.
 
@@ -177,8 +177,8 @@ Rewrite `progress.md` with these changes:
 **Goal:** Hand off to the next step in the pipeline.
 
 1. Read the updated `progress.md`.
-2. If unresolved batches remain (any row with status `next` or `pending`) -- invoke `health-check:resolve-batch` with the health-check directory path. This is the ONLY valid next step. Do NOT end the session or offer the user other options.
-3. If all batches are resolved (every row has status `done`) -- invoke `health-check:complete` with the health-check directory path. This is the ONLY valid next step. Do NOT end the session or offer the user other options.
+2. If unresolved batches remain (any row with status `next` or `pending`) -- invoke `codebase-health-check:resolve-batch` with the health-check directory path. This is the ONLY valid next step. Do NOT end the session or offer the user other options.
+3. If all batches are resolved (every row has status `done`) -- invoke `codebase-health-check:complete` with the health-check directory path. This is the ONLY valid next step. Do NOT end the session or offer the user other options.
 
 ---
 

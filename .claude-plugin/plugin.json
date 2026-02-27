@@ -1,5 +1,5 @@
 {
-  "name": "health-check",
+  "name": "codebase-health-check",
   "description": "Analyze codebases for structural health issues and guide resolution: dead code, complexity, DRY violations, confusing implementations, extensibility concerns, inconsistent patterns, and naming/organization problems",
   "version": "0.2.0",
   "author": {
