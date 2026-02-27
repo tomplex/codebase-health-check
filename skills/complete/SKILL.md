@@ -99,8 +99,9 @@ Present the following in the conversation:
 
 **Goal:** Commit the final progress update.
 
-1. Stage `progress.md` (and any other health-check metadata files that were modified).
-2. Commit with this message format:
+1. Read the verification command from `plan.md` and run it. If it fails, inform the user and do not commit until the failure is resolved. This maintains the pipeline's "always verify before commit" invariant.
+2. Stage `progress.md` (and any other health-check metadata files that were modified).
+3. Commit with this message format:
    > `docs: complete health check — N resolved, M won't fix`
 
    Where N is the resolved count and M is the won't-fix count. If there are deferred items, append `, P deferred` to the message.

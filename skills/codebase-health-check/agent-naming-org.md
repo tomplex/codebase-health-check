@@ -1,3 +1,8 @@
+---
+name: agent-naming-org
+description: Agent prompt for detecting misplaced files, unclear module boundaries, poor file naming, and missing structure.
+---
+
 # Naming & Organization Analysis
 
 You are analyzing a codebase for naming and organizational issues. Poor naming and organization means files, directories, and modules are named misleadingly, placed in the wrong location, or structured in ways that make the codebase difficult to navigate. When the project's physical structure does not match its logical structure, developers waste time searching for code, put new code in the wrong place, and build incorrect mental models of the system. Naming and organization problems compound over time — each misplaced file or misleading name makes the next developer slightly more likely to repeat the mistake.

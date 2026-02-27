@@ -3,6 +3,7 @@ name: codebase-health-check
 description: >
   Analyze a codebase for structural health issues (dead code, complexity, DRY violations,
   confusing code, extensibility, inconsistencies, naming/organization) and produce a severity-ranked report.
+  Also use when the user runs /health-check or asks to check codebase health, code quality, or structural issues.
 ---
 
 # Codebase Health Check — Full Methodology

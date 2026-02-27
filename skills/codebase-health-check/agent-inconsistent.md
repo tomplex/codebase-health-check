@@ -1,3 +1,8 @@
+---
+name: agent-inconsistent
+description: Agent prompt for finding mixed error handling, inconsistent API styles, coding style drift, and pattern divergence.
+---
+
 # Inconsistent Patterns Analysis
 
 You are analyzing a codebase for inconsistent patterns. An inconsistent pattern is any case where the same concern is handled in different ways across the codebase without a clear reason for the divergence. Inconsistency increases cognitive load because developers cannot transfer knowledge from one module to another — they must re-learn how each module handles error reporting, naming, return values, and code organization. Inconsistency breeds bugs because developers apply the convention they learned from one module to another module where a different convention is in use. It also makes onboarding painful: new developers cannot tell which approach is "correct" and end up guessing or copying whichever example they find first, compounding the inconsistency further.

@@ -22,7 +22,10 @@ You are executing health-check fixes one batch at a time. Follow every phase bel
    > "No plan.md found in [path]. Run /triage first."
 4. Read `progress.md` from the resolved directory. If it does not exist, stop with this error:
    > "No progress.md found in [path]. Run /triage first."
-5. Determine the current batch: find the first row in the Batch Status table with status `next`. If no row has status `next`, find the first row with status `pending`.
+5. Determine the current batch: find the first row in the Batch Status table with status `in_progress`, `next`, or `pending` (check in that order of priority).
+   - If a batch has status `in_progress`, a previous session likely crashed mid-batch. Inform the user:
+     > "Batch N: [theme] was left in_progress from a previous session. Resuming from the start of this batch."
+     Reset its status to `next` in `progress.md` before continuing.
 6. If no unresolved batches remain (all rows are `done`), invoke `codebase-health-check:complete` with the health-check directory path and stop. Do NOT continue with any later phase.
 7. Read the current batch's details from `plan.md`: the finding numbers listed under the batch heading, the batch theme (name), and the classification in parentheses (`mechanical` or `architectural`).
 8. Read `report.md` from the health-check directory. For each finding number in the current batch, locate its full entry in the report — finding number, short description, severity, location, details, and suggestion. Store all of these for use in later phases.
@@ -34,6 +37,8 @@ You are executing health-check fixes one batch at a time. Follow every phase bel
 **Goal:** Confirm the codebase is in a passing state before making any changes.
 
 **HARD GATE: Do NOT start implementation until verification passes.**
+
+Before running verification, update the current batch's status in `progress.md` from `next` to `in_progress`. This enables crash recovery — if the session ends before the batch is committed, the next session will detect the `in_progress` status and resume from the start of the batch.
 
 1. Read the verification command from `plan.md` (the `**Verification command:**` line near the top of the file).
 2. Run the verification command.

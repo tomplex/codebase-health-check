@@ -1,3 +1,8 @@
+---
+name: agent-complexity
+description: Agent prompt for finding deeply nested logic, long functions, high cyclomatic complexity, and over-engineering.
+---
+
 # Complexity Analysis
 
 You are analyzing a codebase for unnecessary complexity. Unnecessary complexity is any code structure that is harder to understand, modify, or debug than it needs to be for the problem it solves. Complexity increases cognitive load, slows development, hides bugs, and discourages contributors from making changes.
