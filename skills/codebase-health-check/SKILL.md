@@ -163,11 +163,11 @@ Within each severity level, group by category.
 
 ### Step 4a: Create the Report Directory
 
-Ensure the directory `docs/health-checks/` exists relative to the current working directory (the project root). Create it if it does not exist.
+Create a new directory `docs/health-checks/YYYY-MM-DD/` relative to the current working directory (the project root), where YYYY-MM-DD is today's date. If it already exists (e.g., re-running on the same day), append a suffix: `YYYY-MM-DD-2/`, `YYYY-MM-DD-3/`, etc.
 
 ### Step 4b: Write the Report File
 
-Write the report to: `<project-root>/docs/health-checks/YYYY-MM-DD-health-check.md` where `<project-root>` is the current working directory.
+Write the report to: `<project-root>/docs/health-checks/YYYY-MM-DD/report.md` where `<project-root>` is the current working directory.
 
 Use today's date for `YYYY-MM-DD`.
 
@@ -240,13 +240,13 @@ Mark task 9 as complete after writing the report.
 
 ---
 
-## Phase 5: Present Summary and Offer Handoff
+## Phase 5: Present Summary and Offer Resolution
 
 Mark task 10 as in_progress.
 
 ### Step 5a: Present the Executive Summary
 
-Show the user the executive summary and finding counts directly in the conversation. Include the path to the full report file. Format it like this:
+Show the user the executive summary and finding counts directly in the conversation. Include the path to the full report. Format:
 
 > **Health Check Complete**
 >
@@ -258,20 +258,20 @@ Show the user the executive summary and finding counts directly in the conversat
 > | Important| N     |
 > | Minor    | N     |
 >
-> Full report written to: `docs/health-checks/YYYY-MM-DD-health-check.md`
+> Full report written to: `docs/health-checks/YYYY-MM-DD/report.md`
 
-If there are Critical findings, also list their short descriptions so the user sees them immediately.
+If there are Critical findings, also list their short descriptions.
 
-### Step 5b: Offer Brainstorming Handoff
+### Step 5b: Offer Resolution Pipeline
 
 After presenting the summary, ask:
 
-> "Would you like to brainstorm solutions for any of these findings? You can reference them by number (e.g., 'Let's look at finding #3')."
+> "Would you like to triage and resolve these findings?"
 
-- If the user says **yes** or references a specific finding, invoke the `superpowers:brainstorming` skill and pass it the relevant finding details (description, location, details, suggestion) as context.
-- If the user says **no** or declines, mark task 10 as complete and end the health check.
+- If the user says **yes**, invoke `codebase-health-check:triage` with the health-check directory path.
+- If the user says **no**, mark task 10 as complete and end the health check. The report stands on its own — the user can run `/resolve` later to pick up the pipeline.
 
-Mark task 10 as complete after the user has finished or declined brainstorming.
+Mark task 10 as complete after the user has responded.
 
 ---
 
